@@ -33,7 +33,13 @@ public:
 public:
     int age;
 };
+void test1()
+{
+    Person p1;
+    Person p2(10);
+}
 int main()
 {
+    test1();
     return 0;
 }

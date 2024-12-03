@@ -29,8 +29,9 @@ int main()
     test2() = 1000;
     cout << ref2 << endl;
     int a = 10;
+    //自动转化为int *const ref = &a;
     int &ref = a;
-    ref = 20;
+    ref = 20; //*ref = 20;
     cout << a << endl;
     cout << ref << endl;
     func(a);

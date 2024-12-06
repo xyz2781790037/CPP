@@ -12,7 +12,7 @@ public:
 };
 class Building
 {
-    friend void goodGay::visit();
+    friend class goodGay;
 
 public:
     Building();

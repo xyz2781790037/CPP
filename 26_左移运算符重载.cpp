@@ -33,7 +33,7 @@ void test()
 
     Person p1(10, 20);
 
-    cout << p1 << "hello world" << endl; // 链式编程
+    cout << p1 << " hello world" << endl; // 链式编程
 }
 
 int main()

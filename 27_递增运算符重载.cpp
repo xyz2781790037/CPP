@@ -20,14 +20,21 @@ public:
     }
 
     // 后置++
-    MyInteger &operator++(int) // 占位参数
+    MyInteger operator++(int)
     {
         // 先返回
-        MyInteger *temp = new MyInteger; // 记录当前本身的值，然后让本身的值加1，但是返回的是以前的值，达到先返回后++；
-        *temp = *this;
+        MyInteger temp = *this; // 记录当前本身的值，然后让本身的值加1，但是返回的是以前的值，达到先返回后++；
         m_Num++;
-        return *temp;
+        return temp;
     }
+    // MyInteger &operator++(int) // 占位参数
+    // {
+    //     // 先返回
+    //     MyInteger *temp = new MyInteger; // 记录当前本身的值，然后让本身的值加1，但是返回的是以前的值，达到先返回后++；
+    //     *temp = *this;
+    //     m_Num++;
+    //     return *temp;
+    // }
 
 private:
     int m_Num;

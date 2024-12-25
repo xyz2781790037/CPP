@@ -22,6 +22,7 @@ public:
         {
             return m_num1 / m_num2;
         }
+        return 0;
     }
 public:
     int m_num1;

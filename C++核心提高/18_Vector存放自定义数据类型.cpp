@@ -31,7 +31,7 @@ void test1()
         cout << "Name:" << it->m_Name << " Age:" << it->m_Age << endl;
     }
 }
-void test02()
+void test2()
 {
 
     vector<Person *> v;
@@ -58,5 +58,7 @@ void test02()
 }
 int main()
 {
+    test1();
+    test2();
     return 0;
 }

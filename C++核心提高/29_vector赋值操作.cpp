@@ -41,3 +41,4 @@ int main()
     test01();
     return 0;
 }
+//  vector赋值方式比较简单，使用operator=，或者assign都可以

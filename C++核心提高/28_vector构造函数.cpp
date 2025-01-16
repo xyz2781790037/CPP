@@ -41,3 +41,4 @@ int main()
     test1();
     return 0;
 }
+// vector的多种构造方式没有可比性，灵活使用即可

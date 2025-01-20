@@ -37,3 +37,5 @@ int main()
     test01();
     return 0;
 }
+// set容器插入数据时用insert 
+// set容器插入数据的数据会自动排序

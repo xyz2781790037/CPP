@@ -39,7 +39,7 @@ int main() {
 	return 0;
  } 
 ```
-$\color{red}{**如果想在翻转时指定位数，则其为半开半闭区间。 如reserve(a+2, a+4);翻转数组中第2-4之间的数，不包括第二个，但包括第四个。**}
+$\color{red}{**如果想在翻转时指定位数，则其为半开半闭区间。 如reserve(a+2, a+4);翻转数组中第2-4之间的数，不包括第二个，但包括第四个。**}$
 ## 四、排序函数：sort()
 1. 对x-y区间的数组、容器进行排序。**默认升序排列。**
 ```c++
@@ -246,4 +246,4 @@ int main() {
     }
 }
 ```
->[原文](https://blog.csdn.net/weixin_43899069/article/details/104450000?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522880737ec9cebb13e92d7e508eb282a12%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=880737ec9cebb13e92d7e508eb282a12&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-104450000-null-null.142^v101^pc_search_result_base1&utm_term=algorithm&spm=1018.2226.3001.4187)
+>[参考原文](https://blog.csdn.net/weixin_43899069/article/details/104450000?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522880737ec9cebb13e92d7e508eb282a12%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=880737ec9cebb13e92d7e508eb282a12&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-104450000-null-null.142^v101^pc_search_result_base1&utm_term=algorithm&spm=1018.2226.3001.4187)

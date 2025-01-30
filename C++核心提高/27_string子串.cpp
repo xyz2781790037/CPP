@@ -6,7 +6,7 @@ void test01()
 {
 
     string str = "abcdefg";
-    string subStr = str.substr(1, 3);
+    string subStr = str.substr(1,3);
     cout << "subStr = " << subStr << endl;
 
     string email = "hello@sina.com";

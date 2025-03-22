@@ -29,7 +29,7 @@ class Person
 public: // 类内可以访问，类外可以
     string m_name;
 
-protected: // 类内可以访问，类外不可以]
+protected: // 类内可以访问，类外不可以
     string m_car;
 
 private: // 类内可以访问，类外不可以

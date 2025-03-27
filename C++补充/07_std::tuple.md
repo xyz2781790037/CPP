@@ -93,3 +93,43 @@ int main() {
     return 0;
 }
 ```
+### 6. 元素个数和类型信息
+你可以使用 std::tuple_size 获取 std::tuple 的元素个数，使用 std::tuple_element 获取某个索引处的元素类型。
+```c++
+#include <iostream>
+#include <tuple>
+#include <type_traits>
+
+int main() {
+    std::tuple<int, double, std::string> myTuple;
+
+    // 获取 tuple 的元素个数
+    std::cout << "Size of tuple: " << std::tuple_size<decltype(myTuple)>::value << "\n";
+
+    // 获取某个索引处的元素类型
+    using ElemType = std::tuple_element<1, decltype(myTuple)>::type;
+    std::cout << "Type of element at index 1: " << typeid(ElemType).name() << "\n";
+
+    return 0;
+}
+```
+### 7. 结合 std::tuple 和 std::get 的完美转发
+```c++
+#include <iostream>
+#include <tuple>
+
+void printTuple(const std::tuple<int&, double&, std::string&>& t) {
+    std::cout << std::get<0>(t) << ", " << std::get<1>(t) << ", " << std::get<2>(t) << "\n";
+}
+
+int main() {
+    int a = 10;
+    double b = 3.14;
+    std::string c = "Hello";
+
+    auto t = std::forward_as_tuple(a, b, c);
+    printTuple(t);
+
+    return 0;
+}
+```
